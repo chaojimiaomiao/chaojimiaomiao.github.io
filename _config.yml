@@ -1,10 +1,10 @@
 # Site settings
-title: 读立写生
+title: 幽幽世界
 header-img: "img/facebook.jpg"
 tagline: "cn"  
-description: "陈素封|读而立·写而生"  
+description: "翟冰洁|一个多才多艺的女程序员"  
 baseurl: ""
-url: "http://cnfeat"  
+url: "http://chaojimiaomiao.github.io"  
 
 # About/contact
 owner: 
@@ -16,12 +16,19 @@ owner:
 gavatar: http://dreamofbook.qiniudn.com/Az..png
 favicon: img/favicon.png
 
-douban_username:  cnfeat
-twitter_username: feat
-github_username: cnfeat
-facebook_username: 
-weibo_username: cnfeat 
-zhihu_username: feat
+weixin_username:  chaojimiaomiao
+github_username: chaojimiaomiao
+qq_username: 放封真
+
+# Extensions
+## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
+## Themes: https://github.com/tommy351/hexo/wiki/Themes
+theme: jacman
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 15 #每页15篇文章
+pagination_dir: page
 
 # Build settings  
 # use Github Flavored Markdown !important  
@@ -29,7 +36,7 @@ zhihu_username: feat
 markdown: kramdown
 highlighter: pygments
 permalink: pretty
-paginate: 8
+paginate: 18
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 relative_permalinks: true
 
@@ -44,7 +51,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "CnFeat"
+      author: "猫猫姐姐"
       header-img: "img/facebook.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
