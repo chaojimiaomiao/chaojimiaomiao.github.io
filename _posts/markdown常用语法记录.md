@@ -1,0 +1,66 @@
+<H5> 1.字体和颜色：</H5>
+
+　<font color=red>红字</font>
+
+　<font face="黑体">我是黑体字</font>
+
+　<font face="微软雅黑">我是微软雅黑</font>
+
+　<font face="STCAIYUN">我是华文彩云</font>
+
+　<font color=0099ff size=5 face="黑体">color=0099ff size=5 face="黑体"</font>
+
+　<font color=#00ffff size=4>color=#00ffff</font>
+
+　<font color=gray size=6>color=gray</font>
+
+　<b>粗体字</b>   
+　 　 
+　*单星号*　<a>*</a>
+
+　_单下划线_　<a>_</a>
+
+　**双星号**　<a>**</a>
+
+　__双下划线__　<a>__</a>
+
+<H5> 2.段落和列表：</H5>
+# 一级标题
+## 二级标题
+### 三级标题
+　
+　<br/>　无序列表示例：
+
+* item1
+* item2
+* item3
+
+　有序列表示例：
+
+1. item1
+1. item2
+1. item3
+
+　多级列表示例
+
+* item1
++ item1.1
+* item2
++ item2.1
+
+<H5> 3.代码：</H5>
+<pre class="brush:java;gutter:true;">
+// Java代码
+class HelloImportnew {
+
+}
+</pre>
+
+
+
+
+
+
+
+
+
