@@ -38,11 +38,9 @@ kramdown:
 owner:
   name: BingJie
   avatar: bio-photo.jpg
-  bio: "Work hard, play harder."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: alittlered3 #username
-  facebook: #username
+  bio: "就职于百姓网的女开发.\n热爱旅行和技术."
+  email: chaojimiaomiao@139.com
+  disqus-shortname: bingjiezblog
   google:
     plus: #username
     analytics:
@@ -50,8 +48,8 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  github: chaojimiaomiao #username
+  weixin: chaojimiaomiao
   linkedin: #username
   xing: #username
   instagram: alittlered0814 #username
