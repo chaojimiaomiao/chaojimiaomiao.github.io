@@ -24,7 +24,7 @@ img {
   text-align: center;
   top: auto;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 2em 2em;
 }
 
 .sidebar {
@@ -92,6 +92,7 @@ a.brand-title {
 .nav-item {
   display: inline-block;
   *display: inline;
+  font-size: 120%;
   zoom: 1;
 }
 
@@ -101,7 +102,7 @@ a.brand-title {
   margin-top: 1em;
   letter-spacing: 0.05em;
   text-transform: capitalize;
-  font-size: 85%;
+  font-size: 100%;
 }
 
 .content-subhead {
@@ -294,5 +295,6 @@ footer {
     position: fixed;
     top: 0;
     bottom: 0;
+    padding-right: 30px;
   }
 }
