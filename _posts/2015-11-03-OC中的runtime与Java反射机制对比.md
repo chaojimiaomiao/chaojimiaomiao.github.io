@@ -6,15 +6,13 @@ tags: [oc, java]
 comments: true
 ---
 
-## OC中的runtime与Java反射机制对比
-
 iOS中的运行时编程，类似Java的反射。
 
 Java是一门静态语言，类和方法都有严格的public, private之分。而反射机制却可以实现动态性，获取类的私有方法等。
 
 ##### runtime VS reflection
 
-1. ######相同点
+1. #####相同点
 
 	都可以实现的功能：获取类信息、属性设置获取、类的动态加载、方法的动态调用等。
 	
@@ -50,7 +48,7 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 　　}   </pre>
 	（在一些解释型语言中，遇到找不到的方法，转到`notFoundMethod`更多）
 	
-2. ######不同点
+2. #####不同点
  
 	OC能动态得给class添加类和方法，Java则不行。例如：
 	<pre class="brush:objc;auto-links:false;">  
@@ -61,7 +59,7 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 	
 	先用objc_allocateClassPair动态函数创建一个类，并在参数中指明该类的父类和类名。再用class_addMethod函数为该类增加了一个方法report，这个方法是由函数ReportFunction实现的，由于该函数至少应包含两个参数self和_cmd，因此该方法有3个参数，类型分别为 ** v、@、：** 一个返回值，self和—cmd。
 	
-3. ######深层次对比
+3. #####深层次对比
 	
 	动态机制：
 	
