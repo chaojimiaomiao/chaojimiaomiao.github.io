@@ -51,7 +51,7 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 2. __不同点__
  
 	OC能动态得给class添加类和方法，Java则不行。例如：
-	<pre>
+	<pre class="brush:c#/cpp/oc;auto-links:false;">
 	import<objc/runtime.h>
 	Class newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
 	class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:")
@@ -65,8 +65,9 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 	
 	OC的runtime对class method的调用是通过全局名称查询；而Java VM则是通过类似C++的虚表机制。 所以OC能动态地给class添加方法，Java则不行。
 	
-	<font color=blue> **这种差别也正好说明了OC是一种动态语言，而Java却是静态语言。Java的reflection只是一种语法特性，而OC的runtime却是一种运行时环境。** </font>
+	<font color="blue""> **这种差别也正好说明了OC是一种动态语言，而Java却是静态语言。Java的reflection只是一种语法特性，而OC的runtime却是一种运行时环境。** </font>
 
+</br></br>
 
 
 
