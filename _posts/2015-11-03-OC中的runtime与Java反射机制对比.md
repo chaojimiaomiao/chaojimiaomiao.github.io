@@ -14,7 +14,7 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 
 ##### runtime VS reflection
 
-1. __相同点__
+1. ######相同点
 
 	都可以实现的功能：获取类信息、属性设置获取、类的动态加载、方法的动态调用等。
 	
@@ -41,27 +41,27 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 	`@dynamic propertyName;`
 	
 	**消息转发：**
-	<pre class="brush:objc;gutter:true;">
+	<pre class="brush:objc;gutter:true;">  
 	negotiate
 　　{
    　　 if ( [someOtherObject respondsTo:@selector(negotiate)] )
         　　return [someOtherObject negotiate];
     　　return self;
-　　} </pre>
+　　}   </pre>
 	（在一些解释型语言中，遇到找不到的方法，转到`notFoundMethod`更多）
 	
-2. __不同点__
+2. ######不同点
  
 	OC能动态得给class添加类和方法，Java则不行。例如：
-	<pre class="brush:objc;auto-links:false;">
+	<pre class="brush:objc;auto-links:false;">  
 	import<objc/runtime.h>
 	Class newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
-	class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:")
+	class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:")  
 	</pre>
 	
 	先用objc_allocateClassPair动态函数创建一个类，并在参数中指明该类的父类和类名。再用class_addMethod函数为该类增加了一个方法report，这个方法是由函数ReportFunction实现的，由于该函数至少应包含两个参数self和_cmd，因此该方法有3个参数，类型分别为 ** v、@、：** 一个返回值，self和—cmd。
 	
-3. __深层次对比__
+3. ######深层次对比
 	
 	动态机制：
 	
