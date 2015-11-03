@@ -39,23 +39,24 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 	`@dynamic propertyName;`
 	
 	**消息转发：**
-	<pre class="brush:objc;gutter:true;">  
+	{% highlight oc %}  
 	negotiate
 　　{
    　　 if ( [someOtherObject respondsTo:@selector(negotiate)] )
         　　return [someOtherObject negotiate];
     　　return self;
-　　}   </pre>
+　　}
+　　{% endhighlight %}
 	（在一些解释型语言中，遇到找不到的方法，转到`notFoundMethod`更多）
 	
 2. #####不同点
  
 	OC能动态得给class添加类和方法，Java则不行。例如：
-	<pre class="brush:objc;auto-links:false;">  
+	{% highlight oc %}	
 	import<objc/runtime.h>
 	Class newClass = objc_allocateClassPair([NSError class], "RuntimeErrorSubclass", 0);
 	class_addMethod(newClass, @selector(report), (IMP)ReportFunction, "v@:")  
-	</pre>
+	{% endhighlight %}
 	
 	先用objc_allocateClassPair动态函数创建一个类，并在参数中指明该类的父类和类名。再用class_addMethod函数为该类增加了一个方法report，这个方法是由函数ReportFunction实现的，由于该函数至少应包含两个参数self和_cmd，因此该方法有3个参数，类型分别为 ** v、@、：** 一个返回值，self和—cmd。
 	
