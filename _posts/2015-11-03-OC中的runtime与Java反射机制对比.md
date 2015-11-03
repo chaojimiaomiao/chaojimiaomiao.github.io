@@ -24,6 +24,8 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 	
 	方法的动态调用：`NSSelectorFromString(@“doSomethingMethod”)`
 	
+	<!--more-->
+	
 	**常见的方法：**
 	
 	`isKindOfClass:  isMemberOfClass:  respondsToSelector: conformsToProtocol:  methodForSelector: `
@@ -67,7 +69,7 @@ Java是一门静态语言，类和方法都有严格的public, private之分。�
 	
 	<font color="blue""> **这种差别也正好说明了OC是一种动态语言，而Java却是静态语言。Java的reflection只是一种语法特性，而OC的runtime却是一种运行时环境。** </font>
 
-</br></br>
+<br/><br/>
 
 
 
