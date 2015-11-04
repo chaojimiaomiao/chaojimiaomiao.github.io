@@ -1,12 +1,16 @@
 body,
 
 p {
-  font-family: $base-font-family;
+  font-family: 黑体;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
+body {
+	background-color: #fbfefb;
+	font-size: 15px;
+}
 
 .notice {
   border: 1px solid lighten($text-color, 45%);

@@ -4,12 +4,13 @@
 
 pre, code {
   font-family: $monospace-font-family;
-  color: $text-color;
+  //color: $text-color;
   background-color: #242a3a;
-  font-size: ($base-font-size - 2);
+  font-size: ($base-font-size - 3);
 }
 code {
-  background: #E1FFFF;
+  color: green;
+  background: #EAFFEA;
   word-break: break-all;
   white-space: normal;
   border-radius: 0;
