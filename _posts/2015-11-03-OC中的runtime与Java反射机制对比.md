@@ -2,7 +2,7 @@
 layout: post
 title: OC中的runtime与Java反射机制对比
 modified: 2015-11-03
-tags: [oc, java]
+tags: [ios, android]
 comments: true
 ---
 
