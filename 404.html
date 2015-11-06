@@ -1,0 +1,20 @@
+---
+layout: default
+description: "你来到了一片荒芜之地"
+---
+
+<h4>Opps...你来到了一个找不到的页面<br/><br/></h4><h5>
+	
+	发生这种情况有可能是因为chaojimiaomiao小姐已经删除了某篇文章<br/><br/>
+	
+	或许，你可以到 <a href="archive/">归档文章</a>中去寻找<br/><br/>
+	
+	也可以给我留言<br/><br/>
+	
+</h5>
+
+
+{% if site.owner.disqus-shortname and page.comments == true %}
+<div id="disqus_thread"></div>
+{% include includes/disqus.html %}
+{% endif %}
