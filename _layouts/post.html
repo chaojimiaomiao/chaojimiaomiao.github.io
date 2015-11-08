@@ -25,11 +25,12 @@ layout: default
 
 </div>
 
-{% if site.owner.disqus-shortname and page.comments == true %}
-<div id="disqus_thread"></div>
-{% include disqus.html %}
+{% if page.comments == true %}
+<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2069449"></script>
+<!-- UY END -->
 {% endif %}
-
 
 {% if site.related_posts.size > 0 %}
 <div class="related-articles">
