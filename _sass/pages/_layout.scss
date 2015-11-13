@@ -7,7 +7,6 @@ a:hover,
 a:focus {
   color: lighten($primary, 60%);
   text-decoration: none;
-  background-color: blue;
 }
 
 
@@ -127,12 +126,12 @@ section.post {
 
 
 a.post-title {
-  color: #006bff;
+  color: $text-color;
   margin-bottom: 0.2em;
+  text-shadow: 1px 1px 1px #999;
   &:hover,
   &:focus {
-     background: yellow;
-     background-color: red;
+     background-color: white;
   }
 }
 
