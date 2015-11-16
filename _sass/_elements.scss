@@ -100,10 +100,17 @@
  */
 
 table {
+	background-color: #f7fef7;
+	border: 1px solid green;
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 1.5em;
-  width: 100%;
+  width: 80%;
   margin: 1em 0;
   min-width: 300px; // adjust to your needs
+}
+
+th {
+	padding: 8px;
+	
 }

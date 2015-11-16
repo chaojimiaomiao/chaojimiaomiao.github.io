@@ -14,9 +14,7 @@ url: http://chaojimiaomiao.github.io # the base hostname & protocol for your sit
 # Jekyll configuration
 ####################################
 #
-markdown:    redcarpet
-redcarpet:
-    extensions: ["tables"]
+markdown:    kramdown
 highlighter: pygments
 excerpt_separator: <!--more-->
 sass:
