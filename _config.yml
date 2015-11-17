@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: 只写高质量的博文
+title: 禅 - 只写高质量的博文
 email: chaojimiaomiao@139.com
 description: > # this means to ignore newlines until "baseurl:"
  冰洁的独立技术博客，关于iOS和android。定期更新，欢迎关注。
@@ -38,7 +38,7 @@ kramdown:
 owner:
   name: BingJie
   avatar: bio-photo.jpg
-  bio: "毕业于同济,就职于百姓网的女开发.
+  bio: "毕业于同济,就职于百姓网的女开发.</br>
   热爱旅行和技术."
   email: chaojimiaomiao@139.com
   disqus-shortname: chaojimiaomiao
