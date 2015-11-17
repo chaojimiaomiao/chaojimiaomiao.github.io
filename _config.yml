@@ -3,7 +3,7 @@
 # Site wide configuration
 ####################################
 #
-title: 禅
+title: 只写高质量的博文
 email: chaojimiaomiao@139.com
 description: > # this means to ignore newlines until "baseurl:"
  冰洁的独立技术博客，关于iOS和android。定期更新，欢迎关注。
