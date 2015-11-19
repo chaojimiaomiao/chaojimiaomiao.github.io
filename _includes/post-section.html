@@ -30,7 +30,7 @@
 
     </header>
 
-    <div class="post-description">
+    <div class="post-description" id="post_parent">
       <p>
         {{ post.excerpt }}
       </p>
@@ -55,3 +55,12 @@
     <a class="more" href= "{{ site.url }}{{ post.url }}" >Read on → </a>
     <hr style="border-color: #ccc">
 </section>
+
+<script type="text/javascript">
+	var parent1 = document.getElementById("post_parent");
+	var child = document.getElementById("markdown-toc");
+	if(parent1 != null && child != null) {
+		parent1.removeChild(child);
+	}
+	
+</script>
