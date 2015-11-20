@@ -13,3 +13,14 @@ layout: default
   </div>
 
 </div>
+
+<script type="text/javascript">
+	var parent = document.getElementsByClassName("post-description");
+	for(var i = 0; i< parent.length; i++) {
+		var one = parent[i];
+		var child = document.getElementById("markdown-toc");
+		if(one != null && child != null) {
+			one.removeChild(child);
+		}
+	}
+</script>
