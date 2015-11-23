@@ -71,6 +71,11 @@ a.brand-title {
   font-family: $heading-font-family;
   font-weight: bold;
   text-transform: uppercase;
+  &:hover,
+  &:focus {
+     background-color: white;
+     color: #006bff;
+  }
 }
 
 .brand-tagline {
