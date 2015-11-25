@@ -14,7 +14,10 @@ comments: true
    + .bashr
    + .bashr_profile  
    注意这些都在Macintosh底下
-4. 一定要去官网：[React Native Doc](https://facebook.github.io/react-native/docs/getting-started.html)
+4. 一定要去官网：__[React Native Doc]__(https://facebook.github.io/react-native/docs/getting-started.html)
+
+<!--more-->
+
 5. 建议重新下载android sdk manager等工具。在命令行输入：android，下图中的东西必须下下来
    + ![image]({{ site.url }}/img/AndroidSDK1.png)
    + 如果你碰到类似'Could not find method compile() for arguments [com.android.support:appcompat-v7:23.0.1] on org.gradle.api.internal.artifact'的错，一定是没安装全。
@@ -27,4 +30,4 @@ comments: true
 #### 综上所述
 　总结就是缺啥补啥。不想一个个搜自己到底缺啥，建议先把Android SDK Manager里能下的都下了，然后再去配置！
 
-<font size="200%">我已经迫不及待要开始写几行JS了~！！</font>
+<font size="4">我已经迫不及待要开始写几行JS了~！！</font>

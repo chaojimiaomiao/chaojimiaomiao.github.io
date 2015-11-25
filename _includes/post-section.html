@@ -26,6 +26,7 @@
       <a class="post-tag {{ tag | slugize }}" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a>
       {% endfor %}
       {% endif %}
+      {{ post.date }}
     </p>
 
     </header>
