@@ -14,7 +14,7 @@ comments: true
    + .bashr
    + .bashr_profile  
    注意这些都在Macintosh底下
-4. 一定要去官网：__[React Native Doc]__(https://facebook.github.io/react-native/docs/getting-started.html)
+4. 一定要去官网：__[React Native Doc](https://facebook.github.io/react-native/docs/getting-started.html)__
 
 <!--more-->
 
