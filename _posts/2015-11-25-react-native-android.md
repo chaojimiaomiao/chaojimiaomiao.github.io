@@ -5,6 +5,7 @@ date:   2015-11-25 15:07:19
 tags: [android]
 comments: true
 ---
+Nov 25, 2015
 
 简单记录下配置react-native android碰到的坑。
 
