@@ -26,7 +26,9 @@
       <a class="post-tag {{ tag | slugize }}" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a>
       {% endfor %}
       {% endif %}
-      {{ page.date | date: "%b %-d, %Y"}}
+      {% if page.author %}
+      {{ page.date | date: "%b %-d, %Y" }}
+      {% endif %}
     </p>
 
     </header>

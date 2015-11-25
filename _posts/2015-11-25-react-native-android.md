@@ -2,6 +2,7 @@
 layout: post
 title:  "react-native android配置中的坑"
 date:   2015-11-25 15:07:19
+tags: [android]
 comments: true
 ---
 
