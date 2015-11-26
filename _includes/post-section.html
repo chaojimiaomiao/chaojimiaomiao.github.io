@@ -25,9 +25,9 @@
       {% for tag in post.tags %}
       <a class="post-tag {{ tag | slugize }}" href="{{ site.url }}/tags/#{{ tag }}">{{ tag }}</a>
       {% endfor %}
-      {% endif %}
-      {% if page.date %}
-      {{ page.date | date: "%b %-d, %Y" }}
+      {% endif %} &nbsp;
+      {% if post.date %}
+      {{ post.date | date: "%F" }}
       {% endif %}
     </p>
 
