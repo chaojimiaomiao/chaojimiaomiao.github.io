@@ -33,3 +33,5 @@ Nov 25, 2015
 　总结就是缺啥补啥。不想一个个搜自己到底缺啥，建议先把Android SDK Manager里能下的都下了，然后再去配置！
 
 <font size="4">我已经迫不及待要开始写几行JS了~！！</font>
+
+![image]({{ site.url }}/img/react_android_success.jpg)
