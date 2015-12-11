@@ -26,7 +26,7 @@ Nov 25, 2015
    + 有一个官网上没说的，但必须下下来：Google Repository 这个在Extras文件夹中
 6. 一开始我找了个快的模拟器Genymotion，可是不能用。因为他的virtul device不能启用GPU HOST。但是Genymotion真的很赞~！！体验真的很赞，真的很赞。重要的话说三遍。速度快配置简单界面友好，我都舍不得卸载。
 所以重点是在terminal打上android avd启动虚拟机，然后按下图的配置。
-   + ![image]({{ site.url }}/img/AndroidSDK1.png)
+   + ![image]({{ site.url }}/img/CreateAVD.png)
    + 上图是官网的配图。然而那是不对的》《 请仔细看下末尾黄色的警示。你需要install Intel x86 Emulator Accelerator(HAXM)
    
 #### 综上所述
