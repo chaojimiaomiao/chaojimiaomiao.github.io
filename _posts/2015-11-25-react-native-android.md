@@ -13,8 +13,8 @@ Nov 25, 2015
 2. 一定要仔细看命令行告诉你的话。
 3. ANDROID_HOME 要加在本机的环境变量中。有这几个文件都可能是，都写一遍：
    + .zshr
-   + .bashr
-   + .bashr_profile  
+   + .bashrc
+   + .bash_profile  
    注意这些都在Macintosh底下
 4. 一定要去官网：__[React Native Doc](https://facebook.github.io/react-native/docs/getting-started.html)__
 
