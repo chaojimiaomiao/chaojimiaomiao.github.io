@@ -14,7 +14,7 @@ comments: true
 
 　　如果你对 react native还不了解，想先有一个总体上的认识，可以下载我的ppt 文档《React Native全接触》
 
-　　[pdf版本链接]({{ site.url }}/downloads/react-native全接触.pdf){:target="_blank"}，点击直接在浏览器中查看，你可能需要一点时间打开此文档。
+　　[pdf版本链接]({{ site.url }}/downloads/react-native全接触.pdf){:target="_blank"}。点击直接在浏览器中查看，你可能需要一点时间打开此文档。
 　　
 <!--more-->
 
@@ -143,6 +143,7 @@ function createComponent(width) {
 
 这是因为任意对象在JavaScript中有参照的身份。然而假如一个语义上不可改变的对象被当成值相等，那么就可以把它当做一个值类型。举个例子，任何通过immutable-js创建的数据结构将被当成一个值属性，假如它深度不可改变。
 <br>
+
 ####例外：ref="string"
 
 不幸的是有一个例外。如果ref属性有一个潜在的字符串值。那么复用这个元素一直是不安全的。这是因为我们在创建阶段捕获了React的拥有者。这是一个不幸的工艺，我们在不断寻找各种改变refs语义的办法来修复它。
@@ -159,6 +160,7 @@ render() {
 }
 {% endhighlight %}
 <br>
+
 ####Non-JSX
 
 这可以运行在JSX上，`React.createElement` 或者由`React.createFactory` 创建的方法。
