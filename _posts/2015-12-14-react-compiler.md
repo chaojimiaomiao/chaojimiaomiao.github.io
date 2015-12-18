@@ -5,12 +5,18 @@ date:   2015-12-14
 tags: [react, 大前端]
 comments: true
 ---
+* 目录
+{:toc}
 
-博主在学习react native的时候接触了JSX。JSX 是一个看起来很像 XML 的 JavaScript 语法扩展。React 可以用来做简单的 JSX 句法转换。
+　　博主在学习react native的时候接触了JSX。JSX 是一个看起来很像 XML 的 JavaScript 语法扩展。React 可以用来做简单的 JSX 句法转换。
 
-在我看来，前端语言纷繁复杂，Html、css、js。有没有一种统一的语法将它们整合起来，包含在一个共同的作用域中，写起来既像标签语言，又有 __namespace__ 的概念；并且当我们在学习的时候，只需学习统一的格式，类定义等等就能写好native应用。可以说，JSX 就是这样的一种语法。
+　　在我看来，前端语言纷繁复杂，Html、css、js。有没有一种统一的语法将它们整合起来，包含在一个共同的作用域中，写起来既像标签语言，又有 __namespace__ 的概念；并且当我们在学习的时候，只需学习统一的格式，类定义等等就能写好native应用。可以说，JSX 就是这样的一种语法。
 
-如果你对 react native还不了解，想先有一个总体上的认识，可以下载我的ppt 文档《React Native全接触》 [pdf版本链接：]({{ site.url }}/downloads/react-native全接触.pdf)
+　　如果你对 react native还不了解，想先有一个总体上的认识，可以下载我的ppt 文档《React Native全接触》 
+　　[pdf版本链接]({{ site.url }}/downloads/react-native全接触.pdf){:target="_blank"}，你可能需要一点时间打开此文档。
+　　
+<!--more-->
+
 
 ###理解JSX
 
