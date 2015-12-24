@@ -13,7 +13,7 @@ comments: true
 
 　　在我看来，前端语言纷繁复杂，Html、css、js。有没有一种统一的语法将它们整合起来，包含在一个共同的作用域中，写起来既像标签语言，又有 __namespace__ 的概念；并且当我们在学习的时候，只需学习统一的格式，类定义等等就能写好native应用。可以说，JSX 就是这样的一种语法。
 
-　　如果你对 react native还不了解，想先有一个总体上的认识，可以下载我的ppt 文档 __《React Native全接触》__ [pdf版本链接]({{ site.url }}/downloads/react-native全接触.pdf){:target="_blank"}。点击直接在浏览器中查看，你可能需要一点时间打开此文档。  
+　　如果你对 react native还不了解，想先有一个总体上的认识，可以下载我的ppt 文档[ __《React Native全接触》__ pdf版本链接]({{ site.url }}/downloads/react-native全接触.pdf){:target="_blank"}。点击直接在浏览器中查看，你可能需要一点时间打开此文档。  
 
 　　以下学习自facebook 的 github issue里。大部分翻译自 RN官方的问题中。
 　　
@@ -22,26 +22,29 @@ comments: true
 
 ###理解JSX
 
-　　我们知道，JavaScript 中没有显式的命名空间，这就意味着一切都定义在全局作用域中。次引用一个变量时，JavaScript 会往上遍历整个全局作用域直到找到该变量。如果遍历完整个全局作用域仍然没有找到该变量，则抛出一个 ReferenceError 错误。
+　　我们知道，JavaScript 中没有显式的命名空间，这就意味着一切都定义在全局作用域中。每次引用一个变量时，JavaScript 会往上遍历整个全局作用域直到找到该变量。如果遍历完整个全局作用域仍然没有找到该变量，则抛出一个 `ReferenceError` 错误。
 
-我们通常通过将JS 变量包含在一个block中来区隐式地区分不同的作用域。
+我们通常通过将JS 变量包含在一个block中来隐式地区分不同的作用域。
 
 然而，JSX 是有命名组件的。
 <br>
 
 ###走进React的编译
 
-　　[Babel](https://babeljs.io/repl/) 是一个转换编译器，内置React JSX扩展。现在的react项目用的就是Babel编译器。Babel的插件系统允许开发者自定义代码转换器并插入到编译过程。这些转换器会接收一棵抽象语法树，并在代码转换成可执行的JavaScript之前对其进行操作。这个编译器实现了
-- 静态&运行时类型检查
-- 闭包消除
-- JavaScript“健康宏（hygienic macros）”
+　　[Babel](https://babeljs.io/repl/) 是一个转换编译器，内置 `React JSX`扩展。现在的 react 项目用的就是Babel编译器。Babel的插件系统允许开发者自定义代码转换器并插入到编译过程。这些转换器会接收一棵抽象语法树，并在代码转换成可执行的 JavaScript 之前对其进行操作。这个编译器实现了
+　　
+* 静态&运行时类型检查
+* 闭包消除
+* JavaScript 健康宏（hygienic macros）
+
 等一些优化插件。
 
 针对react jsx的优化包括：
-- 任意函数内联
-- 函数复制
-- 循环内不变代码外提
-- 对element打tag
+
+* 任意函数内联
+* 函数复制
+* 循环内不变代码外提
+* 对element打tag
 <br>
 
 ###优化编译器：像React元素一样复用常量值类型
