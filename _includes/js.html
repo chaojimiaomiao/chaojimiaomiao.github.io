@@ -1,6 +1,15 @@
 <script type="text/javascript" src="{{ site.url }}/js/jquery-2.1.4.min.js"></script>
 <script src="{{ site.url }}/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ site.url }}/js/main.js"></script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 {% if site.owner.google.analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
