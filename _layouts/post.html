@@ -6,7 +6,7 @@ layout: default
 
   <header class="post-header">
     <h1>{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }} ---- {{page.tags}} {% endif %}</p>
   </header>
 
   <article class="post-content">
@@ -14,8 +14,6 @@ layout: default
   </article>
   <br/>
   <hr>
-  
-  alert({{page.tags}});
   
   <strong><font color="#C83B4C">本文系冰洁原创，遵循</font>
   <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">署名-非商业性知识共享</a>进行许可.
@@ -26,7 +24,6 @@ layout: default
   <br/>
   <p>人生在于体验，体验下打赏吧：）</p>
   <img width="30%" min-width="100px" src="/img/payme.jpg">
-
   
 </div>
 
