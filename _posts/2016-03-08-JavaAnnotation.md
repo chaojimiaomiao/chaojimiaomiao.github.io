@@ -173,7 +173,7 @@ package org.gemini.httpengine.examples;
 
 import org.gemini.httpengine.library.*;
 
-public class UserAPI$$APIINJECTOR implements org.gemini.httpengine.examples.UserAPI {
+public class UserAPI$APIINJECTOR implements org.gemini.httpengine.examples.UserAPI {
     public void login(org.gemini.httpengine.library.OnResponseListener l, java.lang.String username, java.lang.String password) {
         final String FIELD_USERNAME = "username";
         final String FIELD_PASSWORD = "password";
