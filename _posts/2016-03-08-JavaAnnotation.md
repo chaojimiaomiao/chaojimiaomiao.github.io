@@ -137,7 +137,7 @@ public abstract class AddressApi {
 一种是使用 [android annotation](http://androidannotations.org/){:target="_blank"}
 
 android annotations的目标是促进安卓应用的`编写`和`维护`。  
-它包含了对界面，资源，系统服务等的依赖注入，有 ormlite, otto, rest, roboguice 四个annotation 库。分别对应 <font color='blue'><b> __数据库ORM 框架__，__轻量级的EventBus__, __符合rest设计的api__, __view与id的对应__ 。<b></font>
+它包含了对界面，资源，系统服务等的依赖注入，有 ormlite, otto, rest, roboguice 四个annotation 库。分别对应 <font color='blue'><b> 数据库ORM 框架轻量级的EventBus, 符合rest设计的api, view与id的对应 。</b></font>
 
 <br/>
 
@@ -194,7 +194,7 @@ public class UserAPI$$APIINJECTOR implements org.gemini.httpengine.examples.User
 
 这个就是 `InjectFactory.inject` 在编译期间 生成的代码。注意，java annotation使用的都是 __完全限定名__ 。
 
-<font color='blue'>__生成代码__</font> 这么神奇的事是怎么做到的呢 ？这个就要提到`apt` 这玩意了。 apt实际上是 java提供给厂商定义接口服务用的。
+<font color='blue'><b>生成代码</b></font> 这么神奇的事是怎么做到的呢 ？这个就要提到`apt` 这玩意了。 apt实际上是 java提供给厂商定义接口服务用的。
 
 编写注解处理器的核心是AnnotationProcessorFactory和AnnotationProcessor两个接口。后者表示的是注解处理器，而前者则是为某些注解类型创建注解处理器的工厂。
 
