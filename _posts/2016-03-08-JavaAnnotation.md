@@ -137,7 +137,7 @@ public abstract class AddressApi {
 一种是使用 [android annotation](http://androidannotations.org/){:target="_blank"}
 
 android annotations的目标是促进安卓应用的`编写`和`维护`。  
-它包含了对界面，资源，系统服务等的依赖注入，有 ormlite, otto, rest, roboguice 四个annotation 库。分别对应 <font color='blue'> __数据库ORM 框架__，__轻量级的EventBus__, __符合rest设计的api__, __view与id的对应__ 。</font>
+它包含了对界面，资源，系统服务等的依赖注入，有 ormlite, otto, rest, roboguice 四个annotation 库。分别对应 <font color='blue'><b> __数据库ORM 框架__，__轻量级的EventBus__, __符合rest设计的api__, __view与id的对应__ 。<b></font>
 
 <br/>
 
