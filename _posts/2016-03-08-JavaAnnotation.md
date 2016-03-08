@@ -71,7 +71,7 @@ public class ApiAddress {
 
 ### retrofit示例与缺点
 
-假如使用 Retrofit （一个不错的网络请求库）
+Retrofit 是一个优秀的网络请求库，一些公司都在用它。以下是示例：
 
 定义一个新的接口：  
 GitHubService.java  
@@ -100,7 +100,7 @@ return service.listRepos("octocat");
 
 <br/>
 
-##### 缺点是：  
+#### 缺点是：  
 - 额外定义接口文件，但还是要封装 api class。
 
 <br/>
@@ -241,7 +241,7 @@ public @interface Path {
 
 当Java源代码被编译时，编译器的一个插件annotation处理器则会处理这些annotation。处理器可以产生报告信息，或者创建附加的Java源文件或资源。如果annotation本身被加上了RententionPolicy的运行时类，则Java编译器则会将annotation的元数据存储到class文件中。然后，Java虚拟机或其他的程序可以查找这些元数据并做相应的处理。
 
-当然除了annotation处理器可以处理annotation外，我们也可以使用反射自己来处理annotation。Java SE 5有一个名为AnnotatedElement的接口，Java的反射对象类Class,Constructor,Field,Method以及Package都实现了这个接口。这个接口用来表示当前运行在Java虚拟机中的被加上了annotation的程序元素。通过这个接口可以使用反射读取annotation。AnnotatedElement接口可以访问被加上RUNTIME标记的annotation，相应的方法有getAnnotation,getAnnotations,isAnnotationPresent。由于Annotation类型被编译和存储在二进制文件中就像class一样，所以可以像查询普通的Java对象一样查询这些方法返回的Annotation。
+当然除了annotation处理器可以处理annotation外，我们也可以使用反射自己来处理annotation。Java SE 5有一个名为AnnotatedElement的接口，Java的反射对象类Class, Constructor, Field, Method 以及 Package 都实现了这个接口。这个接口用来表示当前运行在 Java 虚拟机中的被加上了 annotation 的程序元素。通过这个接口可以使用反射读取 annotation 。AnnotatedElement 接口可以访问被加上 RUNTIME 标记的 annotation，相应的方法有getAnnotation, getAnnotations, isAnnotationPresent。由于 Annotation 类型被编译和存储在二进制文件中就像 class一样，所以可以像查询普通的 Java 对象一样查询这些方法返回的Annotation。
 
 - ElementType.ANNOTATION_TYPE     //
 - ElementType.CONSTRUCTOR
