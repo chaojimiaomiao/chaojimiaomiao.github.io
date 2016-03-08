@@ -2,22 +2,23 @@
 layout: post
 title:  "自己动手写个api annotation库"
 modified:   2016-03-08
-tags: [ios, 测试]
+tags: [android, java]
 comments: true
 ---
 
 自己动手写个api annotation库  
+
 1. 目前封装的okhttp api库  
 2. retrofit 示例与缺点  
 3. 期望的代码  
 4. annotation分类与实现  
 5. 原理解析  
 
-<!--more -->
+<!--more-->
 
 ### 目前封装的okhttp api库
 
-</br>
+<br/>
 
 最近在整理公司新开的一个 android 项目代码时，发现了一个不大不小的问题。在API 那层的package 底下有很多重复的代码，随便举个 class 的例子。
 
@@ -60,13 +61,13 @@ public class ApiAddress {
 }
 {% endhighlight %} 
 
-</br>
+<br/>
 
 #### 这么做的缺点是：  
 - 大量的重复代码 （比如addQueryParameter等）  
 - 人容易出错
 
-</br>
+<br/>
 
 ### retrofit示例与缺点
 
@@ -97,16 +98,16 @@ return service.listRepos("octocat");
 调用：  
 `List<Repo> repos = GitHubApi.getListRepos();`
 
-</br>
+<br/>
 
 ##### 缺点是：  
 - 额外定义接口文件，但还是要封装 api class。
 
-</br>
+<br/>
 
 ### 期望的代码
 
-</br>
+<br/>
 
 期望的代码，去除所有的冗余
 
@@ -127,18 +128,18 @@ public abstract class AddressApi {
 }
 {% endhighlight %} 
 
-</br>
+<br/>
 
 #### 如何实现？
 
-</br>
+<br/>
 
 一种是使用 [android annotation](http://androidannotations.org/){:target="_blank"}
 
 android annotations的目标是促进安卓应用的`编写`和`维护`。  
-它包含了对界面，资源，系统服务等的依赖注入，有 ormlite, otto, rest, roboguice 四个annotation 库。分别对应 <font color=blue> __数据库ORM 框架__，__轻量级的EventBus__, __符合rest设计的api__, __view与id的对应__ 。</font>
+它包含了对界面，资源，系统服务等的依赖注入，有 ormlite, otto, rest, roboguice 四个annotation 库。分别对应 <font color='blue'> __数据库ORM 框架__，__轻量级的EventBus__, __符合rest设计的api__, __view与id的对应__ 。</font>
 
-</br>
+<br/>
 
 #### 它的缺点：
 
@@ -156,7 +157,7 @@ android annotations的目标是促进安卓应用的`编写`和`维护`。
 
 具体代码 详见 github :
 
-</br>
+<br/>
 
 按上文期望的代码写下 API 后，打开 build 文件夹：
 
@@ -193,15 +194,15 @@ public class UserAPI$$APIINJECTOR implements org.gemini.httpengine.examples.User
 
 这个就是 `InjectFactory.inject` 在编译期间 生成的代码。注意，java annotation使用的都是 __完全限定名__ 。
 
-<font color=blue>__生成代码__</font> 这么神奇的事是怎么做到的呢 ？这个就要提到`apt` 这玩意了。 apt实际上是 java提供给厂商定义接口服务用的。
+<font color='blue'>__生成代码__</font> 这么神奇的事是怎么做到的呢 ？这个就要提到`apt` 这玩意了。 apt实际上是 java提供给厂商定义接口服务用的。
 
 编写注解处理器的核心是AnnotationProcessorFactory和AnnotationProcessor两个接口。后者表示的是注解处理器，而前者则是为某些注解类型创建注解处理器的工厂。
 
-</br>
+<br/>
 
 ### 原理：
 
-</br>
+<br/>
 
 #### Annotation 分类
 
@@ -230,13 +231,13 @@ public @interface Path {
 
 3. 自定义 Annotation  
 自定义 Annotation 表示自己根据需要定义的 Annotation，定义时需要用到上面的元 Annotation
-这里只是一种分类而已，也可以根据作用域分为<font color=blue>源码时、编译时、运行时 </font> Annotation。
+这里只是一种分类而已，也可以根据作用域分为<font color='blue'>源码时、编译时、运行时 </font> Annotation。
 
-</br>
+<br/>
 
 #### Annotation是如何被处理的
 
-</br>
+<br/>
 
 当Java源代码被编译时，编译器的一个插件annotation处理器则会处理这些annotation。处理器可以产生报告信息，或者创建附加的Java源文件或资源。如果annotation本身被加上了RententionPolicy的运行时类，则Java编译器则会将annotation的元数据存储到class文件中。然后，Java虚拟机或其他的程序可以查找这些元数据并做相应的处理。
 
