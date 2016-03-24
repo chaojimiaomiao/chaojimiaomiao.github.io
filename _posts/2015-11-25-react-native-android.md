@@ -35,3 +35,11 @@ Nov 25, 2015
 <font size="4">我已经迫不及待要开始写几行JS了~！！</font>
 
 ![image]({{ site.url }}/img/react_android_success.jpg)
+
+<hr>
+
+后续：
+
+今天终于折腾出了react android切端口这事，不用同时只能运行一个app。现在边iOS模拟器看demo边android 真机改项目，爽～
+
+![image]({{ site.url }}/img/rn_android_ios.jpg)
