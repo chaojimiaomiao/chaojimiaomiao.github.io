@@ -42,4 +42,4 @@ Nov 25, 2015
 
 今天终于折腾出了react android切端口这事，不用同时只能运行一个app。现在边iOS模拟器看demo边android 真机改项目，爽～
 
-![image]({{ site.url }}/img/rn_android_ios.jpg)
+![image]({{ site.url }}/img/rn_android_ios.JPG)
