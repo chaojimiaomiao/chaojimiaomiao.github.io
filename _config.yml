@@ -8,6 +8,7 @@ email: chaojimiaomiao@139.com
 description: > # this means to ignore newlines until "baseurl:"
  冰洁的独立技术博客，关于iOS和android。定期更新，欢迎关注。
 url: http://chaojimiaomiao.github.io # the base hostname & protocol for your site
+encoding: 'utf-8'
 
 #
 ###################################
@@ -20,7 +21,7 @@ excerpt_separator: <!--more-->
 sass:
   sass_dir: _sass
   style: compressed
-gems:
+plugins:
   - jekyll-sitemap
 
 kramdown:
@@ -36,10 +37,10 @@ kramdown:
 ####################################
 #
 owner:
-  name: BingJie
+  name:
   avatar: bio-photo.jpg
   bio: "www.btcat.cn的CEO.</br>
-  毕业于同济和上交，多年移动互联网开发经验.
+  毕业于同济和上交，多年移动互联网开发经验.</br>
   2017年进入区块链行业，成为一名创业者."
   email: chaojimiaomiao@qq.com
   disqus-shortname: chaojimiaomiao
