@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "GitHub Pages 上的 Jekyll "
-date:   2020-11-19 20:04:22 +0800
-categories: jekyll update
+modified:  2020-11-19 20:04:22 +0800
+tags: [ios, 技术, android]
+comments: true
 ---
 
 
@@ -16,6 +17,8 @@ GitHub 与 Gitee 提供的 Pages 服务中，均内嵌了 Jekyll 支持（Gitee 
 &nbsp;&nbsp; GitHub Pages 没有告诉你它们为自己的 Jekyll 多加了几个插件，Gitee Pages 也没有告诉你它们的 Jekyll 并没有这些插件。  
 这里对 GitHub Pages 与 Gitee Pages 所使用的 Jekyll 进行一个简单的分析（后面姑且简称为 GitHub Jekyll 与 Gitee Jekyll），以说明它们隐性地附加了哪些功能，需要特别注意。  
 <br>
+
+<!--more-->
 
 ### <b>Jekyll on Github Pages</b>
 ----
