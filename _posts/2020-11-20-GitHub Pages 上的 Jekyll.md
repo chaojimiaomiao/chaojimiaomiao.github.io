@@ -23,7 +23,7 @@ GitHub 与 Gitee 提供的 Pages 服务中，均内嵌了 Jekyll 支持（Gitee 
 ### <b>Jekyll on Github Pages</b>
 ----
 
-
+<hr>
 GitHub Pages 中所采用的 Jekyll 及插件、依赖，被汇总到名为 github-pages 的 Gem 中（主页）。如果你在本地安装了这个 Gem，可以运行它来查看其所要求的各项依赖版本。以目前最新的 204 版本为例，在 shell 中运行：  
 >   
 $ github-pages versions  
