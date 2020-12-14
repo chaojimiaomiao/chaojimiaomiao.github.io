@@ -1,5 +1,17 @@
+---
+layout: post
+title:  "搭建一个Chainlink节点并发送交易（上）"
+modified:   2020-12-13
+tags: [区块链, 技术, link]
+comments: true
+---
+
 ### 前言
 > **Chainlink**是一个去中心化的预言机网络，它可以让区块链中的智能合约安全地访问外部世界的数据。在这个教程中，你将学习到如何最快自建Chainlink的节点，并发送一笔交易请求。
+
+* 目录
+{:toc}
+
 
 #### 什么是Chainlink节点
 Chainlink 基于ETH 链，但并不是ERC20，而是 ERC677 合约。
@@ -19,6 +31,8 @@ Chainlink 基于ETH 链，但并不是ERC20，而是 ERC677 合约。
 1. 一台linux云服务器，以ubuntu为例 
 2. 一个postgresql数据库
 3. 一个eth节点
+
+<!--more-->
 
 本教程以[google cloud](https://cloud.google.com/)为例，你也可以选用国内的阿里云，两者都支持postgresql数据库。笔者一开始选择的是[vultr云服务器](http://vultr.com/)，后台并没有自带数据库，需要自己搭建，比较复杂就不赘述。
 由于国内用户对GCloud并不熟悉，所以说得详细一些。
