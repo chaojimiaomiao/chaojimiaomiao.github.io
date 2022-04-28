@@ -6,7 +6,7 @@
 title: 禅 - 只写高质量的博文
 email: chaojimiaomiao@139.com
 description: > # this means to ignore newlines until "baseurl:"
- 猫姬的独立技术博客，关于技术和人生。定期更新，欢迎关注。
+ 冰洁的独立技术博客，关于iOS和android。定期更新，欢迎关注。
 url: http://chaojimiaomiao.github.io # the base hostname & protocol for your site
 encoding: 'utf-8'
 
@@ -37,7 +37,7 @@ kramdown:
 ####################################
 #
 owner:
-  name: maojie.eth
+  name: 猫姬maojie.eth
   avatar: bio-photo.jpg
   bio: "www.btcat.cn CEO.</br>
   有几个显卡矿场.</br>
